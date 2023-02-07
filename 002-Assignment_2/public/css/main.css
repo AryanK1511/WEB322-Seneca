@@ -1,0 +1,66 @@
+/* ========== NAVBAR ========== */
+.navbar-brand {
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+.navbar-collapse {
+  font-weight: 800;
+}
+
+/* ========== Not Found Page ========== */
+.not-found-page {
+    height: 100vh;
+}
+
+.center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -60%);
+  }
+
+.not-found-err-img {
+    width: 400px;
+}
+
+.error-content-box {
+    font-family: 'Poppins', sans-serif;
+}
+
+.not-found-heading-1 {
+    font-size: 8rem;
+    font-weight: 700;
+}
+
+.not-found-heading-2 {
+    font-size: 2rem;
+}
+
+.not-found-btn {
+    font-size: 0.8rem;
+    padding: 15px;
+    width: 200px;
+    border: 2px solid black;
+    border-radius: 8px;
+    background: transparent;
+    transition: 1s;
+    margin-top: 20px;
+  }
+  
+  .not-found-home-link .not-found-btn {
+    font-weight: bold;
+    text-decoration: none;
+    color: #ff8e3c;
+    transition: 1s;
+  }
+  
+  .not-found-btn:hover {
+    background: #ff8e3c;
+  }
+  
+  .not-found-home-link .not-found-btn:hover {
+    color: #fffffe;
+  }
