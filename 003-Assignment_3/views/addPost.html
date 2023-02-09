@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="https://bootswatch.com/3/cosmo/bootstrap.min.css" />
+
+      <!-- Custom CSS -->
+      <link rel="stylesheet" href="/css/main.css">
+      
+      <title>Add Post</title>
+  </head>
+  <body>
+    <!-- ========== NavBar ========== -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <span class="navbar-brand">WEB322 - Aryan Khurana</span>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="/blog">Blog</a></li>
+            <li><a href="/about">About</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="/posts">Posts</a></li>
+            <li><a href="/categories">Categories</a></li> 
+            <li class="active"><a href="/posts/add">Add Post</a></li>           
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ========== HOME / ABOUT PAGE ========== -->
+    <div class="container" style="padding-top:60px">
+      <div class="row">
+        <div class="col-md-12">
+            <h2>Add Post</h2>
+            <br />
+            <form method="post" action="/posts/add" enctype="multipart/form-data">
+                <fieldset>
+                    <legend>Feature Image</legend>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <input class="form-control" id="featureImage" name="featureImage" type="file" />
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+                <br />
+                <fieldset>
+                  <legend>Post Content</legend>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label for="title">Title:</label>
+                                <input class="form-control" id="title" name="title" type="text" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label for="body">Body:</label>
+                               <textarea class="form-control" id="body" name="body" rows=15></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="category">Category:</label>
+                                <select class="form-control" name="category" id="category">
+                                  <option value="1">Technology</option>
+                                  <option value="2">Gaming</option>
+                                  <option value="3">Fashion</option>
+                                  <option value="4">Education</option>
+                                  <option value="5">Wellness</option>
+               
+                                </select> 
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                              <label for="category">Visibility:</label>
+                              <div class="checkbox">
+                                <label>
+                                  <input type="checkbox" name="published" id="published"> Published
+                                </label>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+                <hr />
+                <input type="submit" class="btn btn-primary pull-right" value="Add Post" /><br /><br /><br />
+    
+            </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Latest compiled and minified jQuery 3.6.0 JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!-- Latest compiled and minified Bootstrap 3.4.1 JavaScript -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+  </body>
+</html>
