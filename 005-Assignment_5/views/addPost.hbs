@@ -1,0 +1,68 @@
+<div class="row">
+<div class="col-md-12">
+<h2>Add Post</h2>
+<br />
+<form method="post" action="/posts/add" enctype="multipart/form-data">
+<fieldset>
+<legend>Feature Image</legend>
+<div class="row">
+<div class="col-md-12">
+<div class="form-group">
+<input class="form-control" id="featureImage" name="featureImage" type="file" />
+</div>
+</div>
+</div>
+</fieldset>
+<br />
+<fieldset>
+<legend>Post Content</legend>
+<div class="row">
+<div class="col-md-12">
+<div class="form-group">
+<label for="title">Title:</label>
+<input class="form-control" id="title" name="title" type="text" />
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-12">
+<div class="form-group">
+<label for="body">Body:</label>
+<textarea class="form-control" id="body" name="body" rows=15></textarea>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-6">
+<div class="form-group">
+<label for="category">Category:</label>
+{{#if categories}}
+<select class="form-control" name="category" id="category">
+<option value="">Select Category</option>
+{{#each categories}}
+<option value="{{id}}">{{category}}</option>
+{{/each}}
+</select>
+{{else}}
+<div>No Categories</div>
+{{/if}}
+</div>
+</div>
+<div class="col-md-6">
+<div class="form-group">
+<label for="category">Visibility:</label>
+<div class="checkbox">
+<label>
+<input type="checkbox" name="published" id="published"> Published
+</label>
+</div>
+</div>
+</div>
+</div>
+</fieldset>
+<hr />
+<input type="submit" class="btn btn-primary pull-right" value="Add Post" /><br /><br /><br />
+</form>
+</div>
+</div>
+</html>
