@@ -6,6 +6,9 @@ This repository contains all the WEB322 (Web Programming Tools and Frameworks) a
 URL not pasted properly and displaying "Hello World!" instead of "Student name - Student ID"
 - Assignment 2 : 100 / 100 
 - Assignment 3 : 100 / 100
+- Assignment 4 : 80 / 100
+The provided Posts are not displayed... but all the rest of the functions are working properly.
+- Assignment 5 : 100 / 100
 
 # Disclaimer
 Please don't just copy the code mindlessly without trying to solve the problems yourself, it's totally pointless if you actually wanna learn how to write software and a blatant violation of the [Academic Integrity](https://www.senecacollege.ca/about/policies/academic-integrity-policy.html) policy of the course.
